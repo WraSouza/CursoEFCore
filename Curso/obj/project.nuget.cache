@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "SJt7JfMsA4KmZ8IfNdL7teVBTC+sv2HfwSKschl7RfAMtDrAX9dNSZFyOpA0U2ognADfr5SwXXFwA3Srk0f+Aw==",
+  "dgSpecHash": "ciiGsj4fUWAs8RDP41PFc9z22iYRWfEqdROQSqEK3XuaHoTUhPgWoVrK+LafU6mxx8W7qf9bu4MA5akkyuE/Vw==",
   "success": true,
   "projectFilePath": "C:\\Users\\wladimir.souza\\Documents\\CursoEFCore\\Curso\\CursoEFCore.csproj",
   "expectedPackageFiles": [
@@ -24,7 +24,10 @@
     "C:\\Users\\wladimir.souza\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.5\\microsoft.extensions.dependencyinjection.abstractions.3.1.5.nupkg.sha512",
     "C:\\Users\\wladimir.souza\\.nuget\\packages\\microsoft.extensions.logging\\3.1.5\\microsoft.extensions.logging.3.1.5.nupkg.sha512",
     "C:\\Users\\wladimir.souza\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.5\\microsoft.extensions.logging.abstractions.3.1.5.nupkg.sha512",
+    "C:\\Users\\wladimir.souza\\.nuget\\packages\\microsoft.extensions.logging.configuration\\3.1.5\\microsoft.extensions.logging.configuration.3.1.5.nupkg.sha512",
+    "C:\\Users\\wladimir.souza\\.nuget\\packages\\microsoft.extensions.logging.console\\3.1.5\\microsoft.extensions.logging.console.3.1.5.nupkg.sha512",
     "C:\\Users\\wladimir.souza\\.nuget\\packages\\microsoft.extensions.options\\3.1.5\\microsoft.extensions.options.3.1.5.nupkg.sha512",
+    "C:\\Users\\wladimir.souza\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\3.1.5\\microsoft.extensions.options.configurationextensions.3.1.5.nupkg.sha512",
     "C:\\Users\\wladimir.souza\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.5\\microsoft.extensions.primitives.3.1.5.nupkg.sha512",
     "C:\\Users\\wladimir.souza\\.nuget\\packages\\microsoft.identity.client\\3.0.8\\microsoft.identity.client.3.0.8.nupkg.sha512",
     "C:\\Users\\wladimir.souza\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",

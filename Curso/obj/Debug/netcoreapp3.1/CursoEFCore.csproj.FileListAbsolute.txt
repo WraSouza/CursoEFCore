@@ -47,3 +47,6 @@ C:\Users\wladimir.souza\Documents\CursoEFCore\Curso\obj\Debug\netcoreapp3.1\Curs
 C:\Users\wladimir.souza\Documents\CursoEFCore\Curso\obj\Debug\netcoreapp3.1\CursoEFCore.dll
 C:\Users\wladimir.souza\Documents\CursoEFCore\Curso\obj\Debug\netcoreapp3.1\CursoEFCore.pdb
 C:\Users\wladimir.souza\Documents\CursoEFCore\Curso\obj\Debug\netcoreapp3.1\CursoEFCore.genruntimeconfig.cache
+C:\Users\wladimir.souza\Documents\CursoEFCore\Curso\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\wladimir.souza\Documents\CursoEFCore\Curso\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Console.dll
+C:\Users\wladimir.souza\Documents\CursoEFCore\Curso\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
