@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Curso.Domain;
 using Curso.ValueObjects;
@@ -19,9 +20,85 @@ namespace CursoEFCore
                 
             // }
 
-            ConsultarDados();
+            RemoverRegistro();
+            //AtualizarDados();
+            //ConsultarPedidoCarregamentoAdiantado();
+            //CadastrarPedido();
+            //ConsultarDados();
             //InserirdadosEmMassa();
             //InserirDados();
+        }
+
+        private static void RemoverRegistro()
+        {
+            using var db = new Data.ApplicationContext();
+
+            var cliente = db.Clientes.Find(2);
+
+            //Opção 1 para remover
+            //db.Clientes.Remove(cliente);
+
+            //Opção 2 para remover
+            db.Remove(cliente);
+
+            //Opção 3 para remover
+            //db.Entry(cliente).State =  EntityState.Deleted;
+
+            db.SaveChanges();
+        }
+
+        private static void AtualizarDados()
+        {
+            using var db = new Data.ApplicationContext();
+            var cliente = db.Clientes.Find(1);
+            cliente.Nome = "Cliente Alteração Passo 2";
+
+            //Com esse método ele irá "atualizar" todos os atributos porém não é necessário pois apenas alguns campos foram alterados.
+            //O mais correto seria não utilizar o update pois ele rastreia quais campos foram alterados
+            //db.Clientes.Update(cliente);
+            db.SaveChanges();
+        }
+
+        private static void ConsultarPedidoCarregamentoAdiantado()
+        {
+            using var db = new Data.ApplicationContext();
+            //Para Carregar os relacionamentos deve-se inserir o Include e a propriedade de navegação que se deseja
+            var pedidos = db.Pedidos
+            .Include(p => p.Itens)
+            .ThenInclude(p => p.Produto)
+            .ToList();
+
+            Console.WriteLine(pedidos.Count);
+        }
+
+        private static void CadastrarPedido()
+        {
+            using var db = new Data.ApplicationContext();
+            var cliente = db.Clientes.FirstOrDefault();
+            var produto = db.Produtos.FirstOrDefault();
+
+            var pedido = new Pedido
+            {
+                ClienteId = cliente.Id,
+                IniciadoEm = DateTime.Now,
+                FinalizadoEm = DateTime.Now,
+                Observacao = "Pedido Teste",
+                Status = StatusPedido.Analise,
+                TipoFrete = TipoFrete.SemFrete,
+                Itens = new List<PedidoItem>
+                {
+                    new PedidoItem
+                    {
+                        ProdutoId = produto.Id,
+                        Desconto = 0,
+                        Quantidade = 1,
+                        Valor = 10,
+                    }
+                }
+            };
+
+            db.Pedidos.Add(pedido);
+            db.SaveChanges();
         }
 
         private static void ConsultarDados()
